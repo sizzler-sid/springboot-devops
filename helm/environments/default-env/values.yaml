@@ -1,0 +1,15 @@
+global:
+  configMapName: attendancedev-configmap
+  activeProfile: default
+  configServerURL: configserver:http://configserver:8071/
+  eurekaServerURL: http://eurekaserver:8761/eureka/
+  keyCloakURL: http://keycloak.default.svc.cluster.local:80/realms/master/protocol/openid-connect/certs
+  openTelemetryJavaAgent: "-javaagent:/app/libs/opentelemetry-javaagent-1.27.0.jar"
+  otelExporterEndPoint: http://tempo-grafana-tempo-distributor:4317
+  otelMetricsExporter: none
+  kafkaBrokerURL: kafka-controller-0.kafka-controller-headless.default.svc.cluster.local:9092
+  mySqlUsername: user
+  mySqlPassword: root
+  mySqlURL: jdbc:mysql://mysql.default.svc.cluster.local:3306/attendancedb?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false&enabledTLSProtocols=TLSv1.2
+  mongo: mongodb://mongodb:27017/mydb1
+  

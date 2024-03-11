@@ -1,0 +1,6 @@
+dependencies:
+- name: attendance-common
+  repository: file://../../attendance-common
+  version: 0.1.0
+digest: sha256:65eb88f19bda42a6ad157a18a08ff5420e3922fa35d8c429d18fdebce8c6c597
+generated: "2024-02-27T12:48:05.6730369+05:30"

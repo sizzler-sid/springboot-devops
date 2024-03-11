@@ -1,0 +1,15 @@
+dependencies:
+- name: attendance-common
+  repository: file://../../attendance-common
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://../../attendance-services/eurekaserver
+  version: 0.1.0
+- name: employee-attendance
+  repository: file://../../attendance-services/employee-attendance
+  version: 0.1.0
+- name: gatewayserver
+  repository: file://../../attendance-services/gatewayserver
+  version: 0.1.0
+digest: sha256:7aec53d9313ad1134352ff63a7cd3810d623011deb15aeca51e26ef753459f98
+generated: "2024-02-27T13:06:11.3997987+05:30"

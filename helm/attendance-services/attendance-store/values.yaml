@@ -1,0 +1,31 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: attendance-store-deployment
+serviceName: attendance-store
+appLabel: attendance-store
+appName: attendance-store
+
+replicaCount: 1
+
+image:
+  repository: sidgarg/attendance-store
+  tag: S1
+
+containerPort: 8090
+
+service:
+  type: ClusterIP
+  port: 8090
+  targetPort: 8090
+
+appname_enabled: true
+profile_enabled: true
+config_enabled: false
+eureka_enabled: false
+resouceserver_enabled: false
+otel_enabled: true
+kafka_enabled: true
+eureka_force_enabled: true
+mysql_enabled: false
+mongo_enabled: true
